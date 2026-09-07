@@ -7,5 +7,6 @@ spec:
   selector:
     app: backend
   ports:
-   - port: 8080
-     targetPort: 8080
+    - protocol: TCP
+      port: 80          # External port clients connect to
+      targetPort: 8080  # Internal port the container listens on
