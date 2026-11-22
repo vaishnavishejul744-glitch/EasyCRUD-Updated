@@ -1,9 +1,10 @@
+
 apiVersion: apps/v1
 kind: Deployment
-metadata: 
-    name: frontend 
-    labels:
-       app: frontend
+metadata:
+  name: frontend
+  labels:
+    app: frontend
 spec:
   replicas: 3
   selector:
@@ -17,6 +18,7 @@ spec:
     spec:
       containers:
         - name: frontend
-           image: vaishnavi2010/frontend:latest
+          image: vaishnavi2010/easycrud1-jenkins:frontend
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
