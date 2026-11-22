@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: vaishnavi2010/easycrud1-jenkins:frontend
+           image: vaishnavi2010/frontend:latest
           ports:
             - containerPort: 80
